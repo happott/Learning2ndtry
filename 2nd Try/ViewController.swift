@@ -10,25 +10,27 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    
-    @IBOutlet weak var label_obenmitte: UILabel!
-    @IBOutlet weak var label_rechtsunten: UILabel!
-    @IBOutlet weak var label_buttonlooser: UILabel!
     
     var tapCount = 0
 
-    @IBAction func button_push(_ sender: Any) {
+    @IBOutlet weak var First_Number: UITextField!
+    @IBOutlet weak var Second_Number: UITextField!
+    @IBOutlet weak var label_obenmitte: UILabel!
 
-        
-    }
-    @IBAction func button_rondom(_ sender: Any) {
+    @IBAction func button_push(_ sender: Any) {
         tapCount += 1
         print(tapCount)
-        
-        if tapCount >= 20{
-            label_buttonlooser.text = "You pushed the Button 20 times!!" }
+        if tapCount >= 10 {
+            label_obenmitte.text = "You pushed it to the Limit!"
+        }
     }
+    
+    @IBAction func Button_Calculate(_ sender: Any) {
+        print(First_Number.text!)
+        print(Second_Number.text!)
+    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -39,7 +41,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 

@@ -27,55 +27,63 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rechte Ecke" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfg-NZ-Y9N">
-                                <rect key="frame" x="264" y="626" width="95" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3q2-jh-KSF">
                                 <rect key="frame" x="109" y="110.5" width="157" height="30"/>
                                 <state key="normal" title="PUSH IT TO THE LIMIT"/>
                                 <connections>
-                                    <action selector="button_push:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eyg-Lk-mAL"/>
+                                    <action selector="button_push:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sIL-G3-m1n"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I hate poverty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXc-1r-YJf">
-                                <rect key="frame" x="135" y="340.5" width="105" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fmo-BL-dW2">
+                                <rect key="frame" x="87.5" y="190.5" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ZQm-6X-SWG"/>
+                                </constraints>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNZ-V2-haY">
-                                <rect key="frame" x="134" y="411.5" width="107" height="30"/>
-                                <state key="normal" title="Random Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hdY-UZ-eBm">
+                                <rect key="frame" x="87.5" y="230.5" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ubE-Oo-oxA"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8J-U7-hlS">
+                                <rect key="frame" x="155.5" y="270.5" width="64" height="30"/>
+                                <state key="normal" title="Calculate"/>
                                 <connections>
-                                    <action selector="button_rondom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gW5-iG-eDG"/>
+                                    <action selector="Button_Calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Pb-7N-EKT"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Fmo-BL-dW2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1W0-nB-zEu"/>
                             <constraint firstItem="OVN-K3-3oS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="2nT-aN-x2s"/>
-                            <constraint firstItem="uNZ-V2-haY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="34M-bu-QHH"/>
-                            <constraint firstItem="dXc-1r-YJf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9yw-ah-xN0"/>
+                            <constraint firstItem="Fmo-BL-dW2" firstAttribute="top" secondItem="3q2-jh-KSF" secondAttribute="bottom" constant="50" id="7uT-Ob-aWC"/>
                             <constraint firstItem="3q2-jh-KSF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C8n-4J-dOn"/>
-                            <constraint firstItem="dXc-1r-YJf" firstAttribute="top" secondItem="3q2-jh-KSF" secondAttribute="bottom" constant="200" id="OsI-N7-unN"/>
-                            <constraint firstItem="uNZ-V2-haY" firstAttribute="top" secondItem="dXc-1r-YJf" secondAttribute="bottom" constant="50" id="QdA-xX-G7F"/>
+                            <constraint firstItem="hdY-UZ-eBm" firstAttribute="top" secondItem="Fmo-BL-dW2" secondAttribute="bottom" constant="10" id="OYW-hC-ncu"/>
                             <constraint firstItem="3q2-jh-KSF" firstAttribute="top" secondItem="OVN-K3-3oS" secondAttribute="bottom" constant="50" id="S3a-iL-je5"/>
+                            <constraint firstItem="hdY-UZ-eBm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k87-75-GrC"/>
                             <constraint firstItem="OVN-K3-3oS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nh1-fC-Bec"/>
+                            <constraint firstItem="Fmo-BL-dW2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o7f-im-cxt"/>
+                            <constraint firstItem="K8J-U7-hlS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qTd-FF-PCl"/>
+                            <constraint firstItem="K8J-U7-hlS" firstAttribute="top" secondItem="hdY-UZ-eBm" secondAttribute="bottom" constant="10" id="usI-k2-EoI"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="label_buttonlooser" destination="dXc-1r-YJf" id="aPc-C7-zxF"/>
+                        <outlet property="First_Number" destination="Fmo-BL-dW2" id="7A4-mL-8dC"/>
+                        <outlet property="Second_Number" destination="hdY-UZ-eBm" id="Uoi-in-yWA"/>
                         <outlet property="label_obenmitte" destination="OVN-K3-3oS" id="unH-C6-MJF"/>
-                        <outlet property="label_rechtsunten" destination="mfg-NZ-Y9N" id="Ylp-IF-mNB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-860" y="-299"/>
+            <point key="canvasLocation" x="-610.39999999999998" y="-256.82158920539734"/>
         </scene>
     </scenes>
 </document>
