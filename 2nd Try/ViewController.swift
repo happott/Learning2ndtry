@@ -5,6 +5,7 @@
 //  Created by Jonas Fröhlich on 30.08.17.
 //  Copyright © 2017 Jonas Fröhlich. All rights reserved..
 //
+// :)
 
 import UIKit
 
@@ -25,8 +26,8 @@ class ViewController: UIViewController {
         tapCount += 1
         print(tapCount)
         
-        if tapCount >= 10{
-            label_buttonlooser.text = "You pushed the Button 10 times!" }
+        if tapCount >= 20{
+            label_buttonlooser.text = "You pushed the Button 20 times!!" }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
