@@ -59,6 +59,12 @@
                                     <action selector="Button_Calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Pb-7N-EKT"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="676-Xa-uo6">
+                                <rect key="frame" x="182" y="400.5" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -68,14 +74,17 @@
                             <constraint firstItem="3q2-jh-KSF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C8n-4J-dOn"/>
                             <constraint firstItem="hdY-UZ-eBm" firstAttribute="top" secondItem="Fmo-BL-dW2" secondAttribute="bottom" constant="10" id="OYW-hC-ncu"/>
                             <constraint firstItem="3q2-jh-KSF" firstAttribute="top" secondItem="OVN-K3-3oS" secondAttribute="bottom" constant="50" id="S3a-iL-je5"/>
+                            <constraint firstItem="676-Xa-uo6" firstAttribute="top" secondItem="K8J-U7-hlS" secondAttribute="bottom" constant="100" id="bBR-b5-KuN"/>
                             <constraint firstItem="hdY-UZ-eBm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k87-75-GrC"/>
                             <constraint firstItem="OVN-K3-3oS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nh1-fC-Bec"/>
                             <constraint firstItem="Fmo-BL-dW2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o7f-im-cxt"/>
                             <constraint firstItem="K8J-U7-hlS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qTd-FF-PCl"/>
                             <constraint firstItem="K8J-U7-hlS" firstAttribute="top" secondItem="hdY-UZ-eBm" secondAttribute="bottom" constant="10" id="usI-k2-EoI"/>
+                            <constraint firstItem="676-Xa-uo6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ve8-4o-Gx8"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Ergebnis" destination="676-Xa-uo6" id="5b9-C0-gMO"/>
                         <outlet property="First_Number" destination="Fmo-BL-dW2" id="7A4-mL-8dC"/>
                         <outlet property="Second_Number" destination="hdY-UZ-eBm" id="Uoi-in-yWA"/>
                         <outlet property="label_obenmitte" destination="OVN-K3-3oS" id="unH-C6-MJF"/>

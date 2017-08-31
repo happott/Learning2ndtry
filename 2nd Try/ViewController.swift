@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var First_Number: UITextField!
     @IBOutlet weak var Second_Number: UITextField!
     @IBOutlet weak var label_obenmitte: UILabel!
+    @IBOutlet weak var Ergebnis: UILabel!
 
     @IBAction func button_push(_ sender: Any) {
         tapCount += 1
@@ -28,6 +29,7 @@ class ViewController: UIViewController {
     @IBAction func Button_Calculate(_ sender: Any) {
         print(First_Number.text!)
         print(Second_Number.text!)
+        Ergebnis.text = "Ergebnis = \(Double(First_Number.text!)! + Double(Second_Number.text!)!)"
     }
 
     
